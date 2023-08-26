@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+
+#root {
+  height: 100vh;
+  font-family: 'Inter';
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  
+}
+
+nav img {
+  width: 6rem;
+}
+
+nav button {
+  border-radius: 10px;
+  padding: .5rem .8rem;
+  color: var(--white);
+  background: var(--green);
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+
+.hero-section {
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero, .hero2 {
+  display: grid;
+  place-items: center;
+  margin-top:  3rem;
+  width: 90%;
+  text-align: center;
+}
+
+.hero h2, .hero2 h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+  color: var(--black);
+}
+
+.hero p, .hero2 p {
+  width: 60%;
+  text-wrap: balance;
+  color: var(--black);
+  font-size: .9rem;
+  margin-bottom: 4rem;
+  
+}
+
+.hero2 h3 {
+  font-size: 1.5rem;
+}
+
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  width: 100%;
+  
+  
+  
+}
+
+input {
+  height: 2rem;
+  width: 50%;
+  outline: none;
+  border: 1px solid var(--green);
+  border-radius: 10px 0 0 10px;
+  padding-inline: 1.2rem;
+  padding-block: 1rem;
+}
+
+form button {
+  border-radius: 0 10px 10px 0;
+  padding: .5rem .9rem;
+  height: auto;
+  color: var(--white);
+  background: var(--green);
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+
+.hero img {
+  max-width: 90%;
+  margin-bottom: 7rem;
+}
+
+
+@media (max-width: 800px) {
+
+}

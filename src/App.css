@@ -209,6 +209,7 @@ form button {
 .join-us {
   display: grid;
   place-items: center;
+  background: rgba(255, 255, 255, .95);
   width: 100%;
 }
 

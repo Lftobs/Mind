@@ -4,6 +4,7 @@
 #root {
   height: 100vh;
   font-family: 'Inter';
+  color: var(--black)
 }
 
 nav {
@@ -42,7 +43,7 @@ nav button {
   text-align: center;
 }
 
-.hero h2, .hero2 h3 {
+.hero h2, .hero2 h3, .join-us h3 {
   font-weight: 600;
   font-size: 2rem;
   margin-bottom: .5rem;
@@ -99,7 +100,160 @@ form button {
   margin-bottom: 7rem;
 }
 
+.cards {
+  display: flex;
+  width: 95%;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .2rem;
+  background: var(--white);
+  width: 32%;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-txt {
+  width: 95%;
+  min-height: 9rem;
+  margin-top: 1rem;
+  border-top: 1px solid var(--black);
+  border-style: dashed none none none;
+
+}
+
+.card h4 {
+  text-align: left;
+  margin-block: .6rem;
+}
+
+.card p {
+  text-align: left;
+  font-size: .75rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.section2 {
+  display: grid;
+  place-items: center;
+  background: url('/bg-logo.svg') var(--white);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container {
+  background: rgba(255, 255, 255, .95);
+  height: inherit;
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  padding-inline: 2rem;
+  justify-content: space-around;
+  
+}
+
+.content {
+  width: 50%;
+  margin-top: 15rem;
+  margin-bottom: 13rem;
+}
+
+.content h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.content p {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+
+.content > div {
+  background: #E8FBEC;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.content > div span {
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+  margin-bottom: .5rem;
+}
+
+.section2 .img {
+  width: 50%;
+  margin-top: 4rem;
+}
+
+.img img {
+  width: 100%;
+}
+
+.img2 {
+  display: none;
+}
+
+.join-us {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.join-us p {
+  font-size: .9rem;
+  
+}
+
+.join-us p:nth-child(3) {
+  margin-bottom: 3rem;
+}
+
+
 
 @media (max-width: 800px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 
+  .card {
+    width: 80%;
+  }
+
+  .card p {
+    margin-bottom: 0;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .img2 {
+    width: 100%;
+    background: transparent !important;
+    display: block;
+  }
+
+  .img2 img {
+    width: 100%;
+  }
+
+  .content {
+    width: 98%;
+    margin-top: 2rem; 
+  }
 }

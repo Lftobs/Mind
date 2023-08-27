@@ -29,12 +29,3 @@ export const platform = [
     }
 ] 
 
-// "
-// Join our waitlist in 5 seconds!
-
-// We want to begin this journey with you. 
-// Join our waitlist to get the experience firsthand.
-
-// Keep an eye on us via our socials
-// Find out what we’re up to and stay updated as we cross each milestone!
-// "

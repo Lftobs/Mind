@@ -208,6 +208,7 @@ form button {
 
 .join-us {
   display: grid;
+  position: relative;
   place-items: center;
   background: rgba(255, 255, 255, .95);
   width: 100%;
@@ -218,9 +219,72 @@ form button {
   
 }
 
-.join-us p:nth-child(3) {
+.join-us .p {
   margin-bottom: 3rem;
 }
+
+.design, .design2  {
+  position: absolute;
+  display: block;
+  width: 12rem;
+  right: 0rem;
+  top: -2rem;
+}
+
+.design img, .design2 img {
+  width: 100%;
+}
+
+.design2 {
+  left: 0;
+  height: 6rem;
+  top: 12rem;
+}
+
+footer {
+  margin-top: 4rem;
+  background: var(--bg);
+  display: grid;
+  place-items: center;
+}
+
+.top {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+footer h3 {
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+}
+
+footer p {
+  font-size: .8rem;
+}
+
+.fp {
+  margin-bottom: 2rem;
+}
+
+footer ul {
+  display: flex;
+  gap: .1rem;
+  flex-direction: column;
+}
+
+footer li {
+  display: flex;
+  align-items: center;
+  font-size: .8rem;
+  gap: 1rem;
+}
+
+
+
+
 
 
 
@@ -257,4 +321,32 @@ form button {
     width: 98%;
     margin-top: 2rem; 
   }
+
+  .join-us h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    width: 90%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+
+
+  form button {
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .top {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
 }

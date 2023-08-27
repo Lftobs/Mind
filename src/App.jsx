@@ -1,17 +1,17 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import './App.css'
 import { Card } from './components/Card'
 import { platform } from './utils'
 import { Join } from './components/Join'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const ref = useRef(null)
 
   return (
     <main>
       <nav>
         <img src='Logo.svg' alt='logo' />
-        <button>Join the Waitlist</button>
+        <button onClick={() => {ref,current?.scrollIntoView({behavior: 'smooth'})}}>Join the Waitlist</button>
       </nav>
       <section className='hero-section'> 
         <div className='hero'>
@@ -57,13 +57,37 @@ function App() {
           </div>
         </div>
 
-        <div className='join-us'>
-           <h3>Join our waitlist in 5 seconds!</h3>
-           <p>We want to begin this journey with you. </p>
-           <p className='p'>Join our waitlist to get the experience firsthand.</p>
-           <Join />
+        <div className='join-us' ref={ref}>
+          <div className='design'>
+            <img src='Vector (1).svg' alt='logo' />
+          </div>
+          <h3>Join our waitlist in 5 seconds!</h3>
+          <p>We want to begin this journey with you. </p>
+          <p className='p'>Join our waitlist to get the experience first hand.</p>
+          <Join />
+          <div className='design2'>
+            <img src='Vectorl.svg' alt='logo' />
+          </div>
         </div>
       </section>
+
+      <footer>
+        <div className='top'>
+          <div className='text'>
+            <h3>Keep an eye on us via our socials </h3>
+            <p>Find out what we’re up to and stay updated as we cross each milestone!</p>
+          </div>
+          <div className='socials'>
+            <ul>
+              <li><a> <img src='instagram.svg' alt='insta' /></a> Instagram</li>
+              <li><a> <img src='twitter.svg' alt='x' /></a> Twitter</li>
+              <li><a> <img src='linkedin.svg' alt='linkedin' /></a> Linkedin</li>
+            </ul>
+          </div>
+          
+        </div>
+        <p className='fp'> &copy;  2023 Mind - All Rights Reserved</p>
+      </footer>
       
     </main>
   )

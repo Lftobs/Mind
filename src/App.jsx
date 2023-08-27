@@ -11,7 +11,7 @@ function App() {
     <main>
       <nav>
         <img src='Logo.svg' alt='logo' />
-        <button onClick={() => {ref,current?.scrollIntoView({behavior: 'smooth'})}}>Join the Waitlist</button>
+        <button onClick={() => {ref.current?.scrollIntoView({behavior: 'smooth'})}}>Join the Waitlist</button>
       </nav>
       <section className='hero-section'> 
         <div className='hero'>

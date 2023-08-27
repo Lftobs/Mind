@@ -7,7 +7,7 @@ export const Card = () => {
     <div className='cards'>
         { cards?.map((card, index) => (
             <div className='card' key={index}>
-                <img src={card.img} alt='context-img' />
+                <img src={card.img} alt='context-img'  loading='lazy' />
                 <div className='card-txt'>
                     <h4>{card.title}</h4>
                     <p>

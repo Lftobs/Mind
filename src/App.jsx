@@ -21,7 +21,7 @@ function App() {
           </p>
 
           <Join />
-          <img src='Hero main.svg' alt='hero-img' />
+          <img src='Hero main.svg' alt='hero-img'   />
         </div>
         <div className='hero2'>
           <h3>Wondering if this is for you?</h3>
@@ -44,7 +44,7 @@ function App() {
                 Our mental health shouldn’t be relegated to the background! Now we can have a place to express ourselves freely without the judging and condensing eyes.
               </p>
               <div className='img2'>
-                <img src='h1.svg' alt='logo' />
+                <img src='h1.svg' alt='logo' loading='lazy' />
               </div>
               { platform?.map( (p, index) => (
                   <div>
@@ -59,14 +59,14 @@ function App() {
 
         <div className='join-us' ref={ref}>
           <div className='design'>
-            <img src='Vector (1).svg' alt='logo' />
+            <img src='Vector (1).svg' alt='logo' loading='lazy' />
           </div>
           <h3>Join our waitlist in 5 seconds!</h3>
           <p>We want to begin this journey with you. </p>
           <p className='p'>Join our waitlist to get the experience first hand.</p>
           <Join />
           <div className='design2'>
-            <img src='Vectorl.svg' alt='logo' />
+            <img src='Vectorl.svg' alt='logo' loading='lazy' />
           </div>
         </div>
       </section>
@@ -79,9 +79,9 @@ function App() {
           </div>
           <div className='socials'>
             <ul>
-              <li><a> <img src='instagram.svg' alt='insta' /></a> Instagram</li>
-              <li><a> <img src='twitter.svg' alt='x' /></a> Twitter</li>
-              <li><a> <img src='linkedin.svg' alt='linkedin' /></a> Linkedin</li>
+              <li><a> <img src='instagram.svg' alt='insta' loading='lazy' /></a> Instagram</li>
+              <li><a> <img src='twitter.svg' alt='x' loading='lazy' /></a> Twitter</li>
+              <li><a> <img src='linkedin.svg' alt='linkedin' loading='lazy' /></a> Linkedin</li>
             </ul>
           </div>
           

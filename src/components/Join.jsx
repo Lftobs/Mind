@@ -11,7 +11,7 @@ export const Join = () => {
     e.preventDefault()
     
     if (email.trim() !== '') {
-      fetch('http://localhost:8080/Emails', {
+      fetch('https://mindsjsondata.onrender.com/api/Emails', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -11,7 +11,7 @@ function App() {
     <main>
       <nav>
         <img src='Logo.svg' alt='logo' />
-        <button onClick={() => {ref.current?.scrollIntoView({behavior: 'smooth'})}}>Join the Waitlist</button>
+        <button  onClick={() => {ref.current?.scrollIntoView({behavior: 'smooth'})}}>Join the Waitlist</button>
       </nav>
       <section className='hero-section'> 
         <div className='hero'>
@@ -35,7 +35,7 @@ function App() {
       <section className='section2' >
         <div className='container'>
           <div className='img'>
-            <img src='h1.svg' alt='logo' />
+            <img  src='h1.svg' alt='logo' />
           </div>
           
           <div className='content'>
@@ -47,7 +47,7 @@ function App() {
                 <img src='h1.svg' alt='logo' loading='lazy' />
               </div>
               { platform?.map( (p, index) => (
-                  <div>
+                  <div >
                     <span><img src={p.img} alt='logo' /> <h4>{p.title}</h4></span>
                     <p>{p.text}</p>
                   </div>

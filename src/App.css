@@ -11,7 +11,9 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
-  
+  margin-right: 4%;
+  margin-left: 4%;
+
 }
 
 nav img {
@@ -26,6 +28,11 @@ nav button {
   outline: none;
   border: none;
   font-weight: 600;
+  height: 44px;
+}
+
+nav button:hover {
+  box-shadow: 6px 6px 4px rgba(164, 209, 127, 0.781);
 }
 
 .hero-section {
@@ -75,8 +82,8 @@ form {
 }
 
 input {
-  height: 2rem;
-  width: 50%;
+  height: 3rem;
+  width: 40%;
   outline: none;
   border: 1px solid var(--green);
   border-radius: 10px 0 0 10px;
@@ -163,9 +170,9 @@ form button {
 }
 
 .content {
-  width: 50%;
-  margin-top: 15rem;
-  margin-bottom: 13rem;
+  width: 37%;
+  margin-top: 20rem;
+  margin-bottom: 15rem;
 }
 
 .content h3 {
@@ -175,22 +182,25 @@ form button {
 }
 
 .content p {
-  font-size: .8rem;
-  margin-bottom: 1rem;
+  font-size: .9rem;
+  margin-bottom: 2rem;
 }
 
 .content > div {
   background: #E8FBEC;
   padding: 1rem;
   border-radius: 10px;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
+
+
 
 .content > div span {
   display: flex;
   gap: .8rem;
   align-items: center;
   margin-bottom: .5rem;
+  
 }
 
 .section2 .img {
@@ -200,6 +210,7 @@ form button {
 
 .img img {
   width: 100%;
+  border-radius: 1em;
 }
 
 .img2 {

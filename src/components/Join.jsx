@@ -28,7 +28,7 @@ export const Join = () => {
   }
 
   return (
-    <form onSubmit={submitEmail}>
+    <form id='test' onSubmit={submitEmail}>
         <input type='email'  pattern='[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}' placeholder='Enter your email address' value={email} onChange={(e)=>setEmail(e.target.value)} />
         <button>Join the Waitlist</button>
     </form>

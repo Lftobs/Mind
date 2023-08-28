@@ -209,7 +209,8 @@ form button {
 }
 
 .img img {
-  width: 100%;
+  width: 589px;
+  height: 568px;
   border-radius: 1em;
 }
 
@@ -300,6 +301,28 @@ footer li {
 
 
 @media (max-width: 800px) {
+  *{
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero {
+    text-align: left;
+  }
+
+  .hero p {
+    width: 100%;
+  }
+
+  .hero2 p {
+    width: 100%;
+  }
+
+  .img2 img {
+    
+    border-radius: 1em;
+  }
+
   .cards {
     flex-direction: column;
     align-items: center;
@@ -347,6 +370,10 @@ footer li {
     width: 90%;
     margin-bottom: 1rem;
     border-radius: 10px;
+  }
+
+  .container{
+    padding-bottom: -30px;
   }
 
 

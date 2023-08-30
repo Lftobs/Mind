@@ -417,7 +417,7 @@ footer li {
   }
 
   .join-us h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
   }
 
@@ -428,19 +428,18 @@ footer li {
   }
 
   input {
-    width: 90%;
+    width: 95%;
     margin-bottom: 1rem;
     border-radius: 10px;
   }
 
   .container{
     width: 100%;
-    background:red;
   } 
 
 
   form button {
-    width: 90%;
+    width: 95%;
     border-radius: 10px;
   }
 

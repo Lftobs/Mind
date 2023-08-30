@@ -357,27 +357,6 @@ footer li {
 }
 
 
-@media (max-width:1000px) {
-  /* .img {
-    display: none;
-  }
-
-  .img2 {
-    width: 100%;
-    background: transparent !important;
-    display: block;
-  }
-
-  .img2 img {
-    width: 100%;
-  }
-
-  .content {
-    width: 98%;
-    margin-top: 2rem; 
-  } */
-}
-
 
 
 
@@ -445,6 +424,8 @@ footer li {
   form {
     flex-direction: column;
     align-items: center;
+    width: 95%;
+    background:red;
   }
 
   input {
@@ -453,9 +434,9 @@ footer li {
     border-radius: 10px;
   }
 
-  /* .container{
-    padding-bottom: -30px;
-  } */
+  .container{
+    width: 95%;
+  } 
 
 
   form button {

@@ -2,12 +2,20 @@ import React, { useState } from 'react'
 
 export const Join = () => {
   const [email,setEmail] = useState('')
+  const [click, setClick] = useState(false)
+  const [msg,  setMsg] = useState('Join the waitlist')
 
   let theWaitlist = {
       email:email
   }
 
-  let submitEmail = (e) =>{
+  const handleClick = () => {
+    setClick(true)
+    setMsg('You are now on the wait-list')
+    setTimeout( () => {setClick(false), setMsg('Join the waitlist')}, 6000)
+  }
+
+  const submitEmail = (e) =>{
     e.preventDefault()
     
     if (email.trim() !== '') {
@@ -28,9 +36,9 @@ export const Join = () => {
   }
 
   return (
-    <form id='test' onSubmit={submitEmail}>
+    <form id='test' onSubmit={submitEmail} data-click={click}>
         <input type='email'  pattern='[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}' placeholder='Enter your email address' value={email} onChange={(e)=>setEmail(e.target.value)} />
-        <button>Join the Waitlist</button>
+        <button onClick={handleClick}>{msg}</button>
     </form>
 
   )

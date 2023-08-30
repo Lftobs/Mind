@@ -22,7 +22,7 @@ nav img {
 
 nav button {
   border-radius: 10px;
-  padding: .5rem .8rem;
+  padding: .5rem 1rem;
   color: var(--white);
   background: var(--green);
   outline: none;
@@ -33,6 +33,7 @@ nav button {
 
 nav button:hover {
   box-shadow: 6px 6px 4px rgba(164, 209, 127, 0.781);
+  cursor: pointer;
 }
 
 .hero-section {
@@ -70,15 +71,18 @@ nav button:hover {
   font-size: 1.5rem;
 }
 
+.hero span {
+  font-weight: 700;
+  color: var(--green);
+} 
+
 
 form {
   display: flex;
   justify-content: center;
   margin-bottom: 3rem;
   width: 100%;
-  
-  
-  
+  transition: 2s ease-in-out; 
 }
 
 input {
@@ -100,6 +104,56 @@ form button {
   outline: none;
   border: none;
   font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+form[data-click='true'] button {
+  width: 55%;
+  border-radius: 10px;
+  height: 3rem;
+  padding-inline: 1.2rem;
+  padding-block: 1rem;
+  animation: 3s alternate slidein;
+}
+
+@keyframes slidein {
+  from {
+    width: 11%;
+  }
+  50% {
+    width: 36%;
+  }
+  to {
+    width: 55%;
+  }
+}
+
+form[data-click='true'] input {
+  width: 0%;
+  padding: 0;
+  border: none;
+  animation: 3s alternate slideout;
+}
+
+form[data-click='true'] input::placeholder {
+  opacity: 0;
+}
+
+@keyframes slideout {
+  from {
+    width: 40%;
+    opacity: 1;
+  }
+  50% {
+    width: 19%;
+    opacity: .5;
+  }
+  to {
+    display: none;
+    opacity: 0;
+    border: none;
+  }
 }
 
 .hero img {
@@ -153,26 +207,31 @@ form button {
 .section2 {
   display: grid;
   place-items: center;
-  background: url('/bg-logo.svg') var(--white);
+  background: url('/bg-logo.svg');
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-.container {
+.eff {
   background: rgba(255, 255, 255, .95);
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.container {
   height: inherit;
   display: flex;
-  width: 100%;
-  gap: 2rem;
+  width: 89%;
+  gap: 0rem;
   padding-inline: 2rem;
   justify-content: space-around;
-  
 }
 
 .content {
-  width: 37%;
-  margin-top: 20rem;
-  margin-bottom: 15rem;
+  width: 50%;
+  margin-top: 15rem;
+  margin-bottom: 8rem;
 }
 
 .content h3 {
@@ -190,10 +249,12 @@ form button {
   background: #E8FBEC;
   padding: 1rem;
   border-radius: 10px;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
-
+.content > div p {
+  margin-bottom: .6rem;
+}
 
 .content > div span {
   display: flex;
@@ -209,9 +270,10 @@ form button {
 }
 
 .img img {
-  width: 589px;
-  height: 568px;
-  border-radius: 1em;
+  width: 95%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .img2 {
@@ -295,7 +357,26 @@ footer li {
 }
 
 
+@media (max-width:1000px) {
+  /* .img {
+    display: none;
+  }
 
+  .img2 {
+    width: 100%;
+    background: transparent !important;
+    display: block;
+  }
+
+  .img2 img {
+    width: 100%;
+  }
+
+  .content {
+    width: 98%;
+    margin-top: 2rem; 
+  } */
+}
 
 
 
@@ -372,9 +453,9 @@ footer li {
     border-radius: 10px;
   }
 
-  .container{
+  /* .container{
     padding-bottom: -30px;
-  }
+  } */
 
 
   form button {
@@ -385,6 +466,22 @@ footer li {
   .top {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  form[data-click='true'] button {
+    width: 100%;
+  }
+
+  @keyframes slidein {
+    from {
+      width: 100%;
+    }
+    50% {
+      width: 100%;
+    }
+    to {
+      width: 100%;
+    }
   }
 
 }

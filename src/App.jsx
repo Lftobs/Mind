@@ -10,18 +10,18 @@ function App() {
   return (
     <main>
       <nav>
-        <img src='Logo.svg' alt='logo' />
+        <img src='Logo.svg' alt='logo' fetchpriority='high'/>
         <button  onClick={() => {ref.current?.scrollIntoView({behavior: 'smooth'})}}>Join the Waitlist</button>
       </nav>
       <section className='hero-section'> 
         <div className='hero'>
           <h2>A space to Share, Empathize, and Heal together!</h2>
           <p>
-            Acknowledging our low mood is the first step towards light. Join Mind, a haven for those navigating emotional seas and a lighthouse for those seeking safe harbor.
+            Acknowledging our low mood is the first step towards light. Join <span>Mind</span>, a haven for those navigating emotional seas and a lighthouse for those seeking safe harbor.
           </p>
 
           <Join />
-          <img src='Hero main.svg' alt='hero-img'   />
+          <img src='Hero main.svg' alt='hero-img' fetchpriority='high' />
         </div>
         <div className='hero2'>
           <h3>Wondering if this is for you?</h3>
@@ -32,28 +32,30 @@ function App() {
         </div>
 
       </section>
-      <section className='section2' >
-        <div className='container'>
-          <div className='img'>
-            <img  src='h1.svg' alt='logo' />
-          </div>
-          
-          <div className='content'>
-              <h3>A platform that cares about you!</h3>
-              <p>
-                Our mental health shouldn’t be relegated to the background! Now we can have a place to express ourselves freely without the judging and condensing eyes.
-              </p>
-              <div className='img2'>
-                <img src='h1.svg' alt='logo' loading='lazy' />
-              </div>
-              { platform?.map( (p, index) => (
-                  <div >
-                    <span><img src={p.img} alt='logo' /> <h4>{p.title}</h4></span>
-                    <p>{p.text}</p>
-                  </div>
-                ))
-              }
-              
+      <section className='section2'>
+        <div className='eff'>
+          <div className='container'>
+            <div className='img'>
+              <img  src='h1.svg' alt='logo' fetchpriority='high' />
+            </div>
+            
+            <div className='content'>
+                <h3>A platform that cares about you!</h3>
+                <p>
+                  Our mental health shouldn’t be relegated to the background! Now we can have a place to express ourselves freely without the judging and condensing eyes.
+                </p>
+                <div className='img2'>
+                  <img src='h1.svg' alt='logo' loading='lazy' />
+                </div>
+                { platform?.map((p, index) => (
+                    <div>
+                      <span><img src={p.img} alt='logo' /> <h4>{p.title}</h4></span>
+                      <p>{p.text}</p>
+                    </div>
+                  ))
+                }
+                
+            </div>
           </div>
         </div>
 

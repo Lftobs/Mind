@@ -425,7 +425,6 @@ footer li {
     flex-direction: column;
     align-items: center;
     width: 95%;
-    background:red;
   }
 
   input {
@@ -435,7 +434,8 @@ footer li {
   }
 
   .container{
-    width: 95%;
+    width: 100%;
+    background:red;
   } 
 
 

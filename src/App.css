@@ -107,6 +107,9 @@ form button {
   background: var(--green);
   outline: none;
   border: none;
+  height: 3rem;
+  padding-inline: 1.2rem;
+  padding-block: 1rem;
   font-weight: 600;
   white-space: nowrap;
   overflow: hidden;
@@ -115,9 +118,6 @@ form button {
 form[data-click='true'] button {
   width: 55%;
   border-radius: 10px;
-  height: 3rem;
-  padding-inline: 1.2rem;
-  padding-block: 1rem;
   animation: .5s alternate slidein;
 }
 
@@ -387,9 +387,11 @@ footer li {
     width: 100%;
   }
 
-  .hero2 p {
+  .hero2 p, .hero2 h3 {
     width: 100%;
+    text-align: left;
   }
+
 
   .img2 img {
     
@@ -403,7 +405,7 @@ footer li {
   }
 
   .card {
-    width: 80%;
+    width: 100%;
   }
 
   .card p {
@@ -418,10 +420,12 @@ footer li {
     width: 100%;
     background: transparent !important;
     display: block;
+    padding: 0 !important;
   }
 
   .img2 img {
     width: 100%;
+    object-fit: cover;
   }
 
   .content {

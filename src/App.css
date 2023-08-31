@@ -22,7 +22,7 @@ nav img {
 
 nav button {
   border-radius: 10px;
-  padding: .5rem 1rem;
+  padding: .5rem 1.3rem;
   color: var(--white);
   background: var(--green);
   outline: none;
@@ -31,9 +31,13 @@ nav button {
   height: 44px;
 }
 
-nav button:hover {
-  box-shadow: 6px 6px 4px rgba(164, 209, 127, 0.781);
+button {
   cursor: pointer;
+}
+
+nav button:hover {
+  box-shadow: 6px 6px 0px 0px rgba(56, 191, 85, 0.50);
+  
 }
 
 .hero-section {
@@ -120,12 +124,18 @@ form[data-click='true'] button {
 @keyframes slidein {
   from {
     width: 11%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
   50% {
     width: 36%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
   to {
     width: 55%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 }
 
@@ -231,7 +241,7 @@ form[data-click='true'] input::placeholder {
 .content {
   width: 50%;
   margin-top: 15rem;
-  margin-bottom: 8rem;
+  margin-bottom: 14rem;
 }
 
 .content h3 {
@@ -242,18 +252,19 @@ form[data-click='true'] input::placeholder {
 
 .content p {
   font-size: .9rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.3rem;
 }
 
 .content > div {
   background: #E8FBEC;
   padding: 1rem;
   border-radius: 10px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
 }
 
 .content > div p {
   margin-bottom: .6rem;
+  margin-left: 2.5rem;
 }
 
 .content > div span {
@@ -361,9 +372,11 @@ footer li {
 
 
 @media (max-width: 800px) {
-  *{
-    padding: 0;
-    margin: 0;
+  
+
+  nav button {
+    border-radius: 10px;
+    padding: .5rem 1rem;
   }
 
   .hero {

@@ -11,7 +11,7 @@ export const Join = () => {
 
   const handleClick = () => {
     setClick(true)
-    setMsg('You are now on the wait-list')
+    setMsg('Yaay! you have been added to the wait-list.')
     setTimeout( () => {setClick(false), setMsg('Join the waitlist')}, 6000)
   }
 

@@ -21,7 +21,7 @@ function App() {
           </p>
 
           <Join />
-          <img src='Hero main.svg' alt='hero-img' fetchpriority='high' />
+          <img src='Hero main.png' alt='hero-img' fetchpriority='high' />
         </div>
         <div className='hero2'>
           <h3>Wondering if this is for you?</h3>
@@ -36,7 +36,7 @@ function App() {
         <div className='eff'>
           <div className='container'>
             <div className='img'>
-              <img  src='h1.svg' alt='logo' fetchpriority='high' />
+              <img  src='h1.jpg' alt='logo' fetchpriority='high' />
             </div>
             
             <div className='content'>
@@ -45,7 +45,7 @@ function App() {
                   Our mental health shouldn’t be relegated to the background! Now we can have a place to express ourselves freely without the judging and condensing eyes.
                 </p>
                 <div className='img2'>
-                  <img src='h1.svg' alt='logo' loading='lazy' />
+                  <img src='h1.jpg' alt='logo' loading='lazy' />
                 </div>
                 { platform?.map((p, index) => (
                     <div>

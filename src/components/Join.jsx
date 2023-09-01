@@ -10,7 +10,7 @@ export const Join = () => {
   }
 
   const handleClick = () => {
-    sumbmitEmail
+    submitEmail()
     setClick(true)
     setMsg('Yaay! you have been added to the waitlist.')
     setEmail('')

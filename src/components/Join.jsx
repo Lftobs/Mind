@@ -14,7 +14,7 @@ export const Join = () => {
   const handleClick = () => {
     setClick(true)
     setMsg('Yaay! you have been added to the waitlist.')
-    setTimeout( () => {setClick(false), submitEmail(), setEmail(''), setMsg('Join the waitlist')}, 7000)
+    setTimeout( () => {setClick(false), submitEmail()}, 7000)
   }
 
   const submitEmail = (e) =>{
@@ -30,10 +30,14 @@ export const Join = () => {
       })
         .then(() => {
           console.log('Successfully submitted');
+          
         })
         .catch((error) => {
           console.error('Error submitting:', error);
         });
+
+        setEmail('')
+        setMsg('Join the waitlist')
     }
   }
 

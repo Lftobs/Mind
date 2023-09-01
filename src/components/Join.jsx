@@ -12,14 +12,13 @@ export const Join = () => {
 
 
   const handleClick = () => {
-    setClick(true)
     setMsg('Yaay! you have been added to the waitlist.')
+    setClick(true)
     setTimeout( () => {setClick(false), submitEmail()}, 7000)
   }
 
   const submitEmail = (e) =>{
     e.preventDefault()
-    
     if (email.trim() !== '') {
       fetch('https://mind-be.vercel.app/api/wait-list/add', {
         method: 'POST',

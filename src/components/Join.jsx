@@ -10,6 +10,7 @@ export const Join = () => {
   }
 
   const handleClick = () => {
+    sumbmitEmail
     setClick(true)
     setMsg('Yaay! you have been added to the waitlist.')
     setEmail('')
@@ -20,7 +21,7 @@ export const Join = () => {
     e.preventDefault()
     
     if (email.trim() !== '') {
-      fetch('https://mindsjsondata.onrender.com/api/Emails', {
+      fetch('https://mind-be.vercel.app/api/wait-list/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

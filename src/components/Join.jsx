@@ -9,26 +9,9 @@ export const Join = () => {
       email:email
   }
 
-  const addMail = () => {
-    if (email.trim() !== '') {
-      fetch('https://mind-be.vercel.app/api/wait-list/add', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({email: email})
-      })
-        .then(() => {
-          console.log('Successfully submitted');
-        })
-        .catch((error) => {
-          console.error('Error submitting:', error);
-        });
-    }
-  } 
+
 
   const handleClick = () => {
-    addEmail()
     setClick(true)
     setMsg('Yaay! you have been added to the waitlist.')
     setEmail('')
